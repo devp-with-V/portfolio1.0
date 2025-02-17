@@ -54,17 +54,18 @@ export default function Home() {
             <h1 className="text-5xl font-bold leading-tight">Vedant Tendulkar</h1>
             <p className="text-2xl">
               I am a Enthusiastic <span className="text-[#C778DD]">CSE Student</span> with a knack for{" "}
-              <span className="text-[#C778DD]">Data Science and ML</span>
+              <span className="text-[#C778DD]">Data Science and ML</span>. This is my portfolio website.
             </p>
+            <p className="text-2xl"></p>
             <p className="text-[#ABB2BF] text-lg">
-              I am passionate about new Technologies and their real world application
+              My passion lies in learning about new Technologies and Sciences and their real world application.
             </p>
             <Button className="bg-transparent border-2 border-[#C778DD] text-[#C778DD] hover:bg-[#C778DD] hover:text-white transition-colors text-lg px-6 py-3">
               Contact me!!
             </Button>
           </div>
           <div className="relative h-[500px]">
-          <Image src="profile.png" alt="Vedant Tendulkar" width={400} height={500} className="rounded-lg object-cover" />
+          <Image src="profile.png" alt="Vedant Tendulkar" width={600} height={600} className="rounded-lg object-cover" />
            
           </div>
         </div>
@@ -163,13 +164,13 @@ export default function Home() {
           <div className="space-y-6">
             <p className="text-2xl">Hello, I'm Vedant Tendulkar !</p>
             <p className="text-[#ABB2BF] text-lg">
-              I'm a self-taught programmer with a little understanding in DevOps based in Maharashtra, India. I can
-              Train and Apply Relational data on complex ML models and currently Learning Advance ML and Deep Learning
+              I'm a self-leaned programmer based in Maharashtra, India. With a little understanding in DevOps. I have
+              Trained and Applied Relational data on complex ML models and currently Learning Advance ML and Deep Learning
               Algorithms.
             </p>
             <p className="text-[#ABB2BF] text-lg">
-              With Addition to Data Science and Machine Learning Cloud Computing in my Academics at VIT Bhopal
-              University, for Over 4 year i have been honing my skills in the use of AWS and other tools like Docker.
+              With Addition to Data Science and Machine Learning, I am persuing Cloud Computing as a minor in my Academics at VIT Bhopal
+              University, for Over 2 year i have been honing my skills in the use of AWS and other tools like Docker.
             </p>
             <Button
               variant="outline"
@@ -178,12 +179,12 @@ export default function Home() {
               Read more →
             </Button>
           </div>
-          <div className="relative h-[500px]">
+          <div className="relative h-[600px]">
           <Image 
             src="/about.png" 
             alt="About Me" 
-            width={400} 
-            height={500} 
+            width={450} 
+            height={600} 
             className="rounded-lg shadow-lg"
           />
 
@@ -200,8 +201,8 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <p className="text-[#ABB2BF] text-lg">
-              I'm interested in collaborative projects and freelance opportunities. However, if you have other request
-              or question, don't hesitate to contact me
+              I would love to collaborative on projects and freelance opportunities. However, if you have other request
+              or question, don't hesitate to contact me......
             </p>
           </div>
           <div className="bg-[#282C33] p-8 border border-[#ABB2BF] relative">
@@ -209,11 +210,11 @@ export default function Home() {
             <h3 className="font-medium text-xl mb-6">Message me here</h3>
             <div className="space-y-4">
               <Link
-                href="mailto:vedant@mail.com"
+                href="mailto:vedant02ms@gmail.com"
                 className="flex items-center gap-3 text-[#C778DD] hover:text-[#AB4FB6] transition-colors text-lg"
               >
                 <Mail className="w-5 h-5" />
-                vedant@mail.com
+                vedant02ms@gmail.com
               </Link>
               <Link
                 href="mailto:vatendulkar2005@gmail.com"
@@ -252,18 +253,18 @@ export default function Home() {
 const projects = [
   {
     title: "Portfolio",
-    description: "My professional and personal bio",
-    tech: "HTML CSS Figma JS",
+    description: "My personal portifolio website",
+    tech: "Typescript CSS Figma JS",
   },
   {
-    title: "ProtectX",
-    description: "Discord anti-crash bot",
-    tech: "React Express Discord.js Node.js",
+    title: "AI generated Data Model Traning. ",
+    description: "Experinmental Project to use Weather Dection Model on Data Generaated by AI, to find the capabilaties and extent of ai generation with respect to real world Data.",
+    tech: "Python JupyterNotebook Sklearn",
   },
   {
-    title: "Kahoot Answers Viewer",
-    description: "Get answers to your kahoot quiz",
-    tech: "CSS Express Node.js",
+    title: "DSA Developer",
+    description: " A DSA giude for Student, with all the required material in one place.",
+    tech: "React typescript JS v0",
   },
 ]
 
