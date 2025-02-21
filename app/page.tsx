@@ -27,18 +27,20 @@ export default function Home() {
             <span className="font-medium">Vedant T</span>
           </Link>
           <div className="flex items-center gap-8">
-            <Link href="#home" className="text-[#C778DD] hover:text-[#AB4FB6] transition-colors">
-              home
-            </Link>
-            <Link href="./Works/Page.tsx" className="hover:text-[#C778DD] transition-colors">
-              #works
-            </Link>
-            <Link href="./About/AboutPage.tsx" className="hover:text-[#C778DD] transition-colors">
-              #about-me
-            </Link>
-            <Link href="#contacts" className="hover:text-[#C778DD] transition-colors">
-              #contacts
-            </Link>
+          <Link href="/" className="text-[#C778DD] hover:text-[#AB4FB6] transition-colors">
+  home
+</Link>
+<Link href="/Works" className="hover:text-[#C778DD] transition-colors">
+  #works
+</Link>
+<Link href="/About" className="hover:text-[#C778DD] transition-colors">
+  #about-me
+</Link>
+<Link href="/Contacts" className="hover:text-[#C778DD] transition-colors">
+  #contacts
+</Link>
+
+
             <select className="bg-transparent border-none outline-none cursor-pointer">
               <option value="en">EN</option>
             </select>
