@@ -30,10 +30,10 @@ export default function Home() {
             <Link href="#home" className="text-[#C778DD] hover:text-[#AB4FB6] transition-colors">
               home
             </Link>
-            <Link href="#works" className="hover:text-[#C778DD] transition-colors">
+            <Link href="./Works/Page.tsx" className="hover:text-[#C778DD] transition-colors">
               #works
             </Link>
-            <Link href="#about-me" className="hover:text-[#C778DD] transition-colors">
+            <Link href="./About/AboutPage.tsx" className="hover:text-[#C778DD] transition-colors">
               #about-me
             </Link>
             <Link href="#contacts" className="hover:text-[#C778DD] transition-colors">
