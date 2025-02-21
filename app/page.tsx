@@ -65,7 +65,7 @@ export default function Home() {
             </Button>
           </div>
           <div className="relative h-[500px]">
-          <Image src="profile.png" alt="Vedant Tendulkar" width={600} height={600} className="rounded-lg object-cover" />
+          <Image src="profile.png" alt="Vedant Tendulkar" width={700} height={700} className="rounded-lg object-cover" />
            
           </div>
         </div>
