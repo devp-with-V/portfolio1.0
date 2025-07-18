@@ -1,0 +1,86 @@
+import type { Project } from "@/lib/types"
+
+export const projects: Project[] = [
+  {
+    id: "portfolio",
+    title: "Portfolio",
+    description: "My professional and personal bio showcasing my skills and projects",
+    longDescription:
+      "A modern, responsive portfolio website built with Next.js and Framer Motion. Features include smooth animations, dark theme, and mobile-first design approach.",
+    technologies: ["HTML", "CSS", "Figma", "JS", "Next.js", "Framer Motion"],
+    category: "Web Development",
+    status: "completed",
+    featured: true,
+    github: "https://github.com/devp-with-v/portfolio",
+    live: "https://vedant-portfolio.vercel.app",
+    image: "/images/portfolio-screenshot.jpg",
+  },
+  {
+    id: "protectx",
+    title: "ProtectX",
+    description: "Discord anti-crash bot with advanced protection features",
+    longDescription:
+      "A comprehensive Discord bot designed to protect servers from various attacks and crashes. Built with Node.js and Discord.js with real-time monitoring capabilities.",
+    technologies: ["React", "Express", "Discord.js", "Node.js", "HTML", "SCSS", "Python", "Flask"],
+    category: "Bot Development",
+    status: "completed",
+    featured: true,
+    github: "https://github.com/devp-with-v/protectx",
+    live: "https://protectx-bot.herokuapp.com",
+    image: "/images/protectx-screenshot.jpg",
+  },
+  {
+    id: "kahoot-answers",
+    title: "Kahoot Answers Viewer",
+    description: "Get answers to your kahoot quiz in real-time",
+    longDescription:
+      "A web application that helps users view Kahoot quiz answers in real-time. Built with modern web technologies for fast and reliable performance.",
+    technologies: ["CSS", "Express", "Node.js", "JavaScript", "HTML"],
+    category: "Web Application",
+    status: "completed",
+    featured: true,
+    github: "https://github.com/devp-with-v/kahoot-answers",
+    live: "https://kahoot-answers.netlify.app",
+    image: "/images/kahoot-screenshot.jpg",
+  },
+  {
+    id: "ml-predictor",
+    title: "ML Price Predictor",
+    description: "Machine learning model for price prediction using various algorithms",
+    longDescription:
+      "A comprehensive machine learning project that predicts prices using multiple algorithms including Random Forest, Linear Regression, and Neural Networks.",
+    technologies: ["Python", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
+    category: "Machine Learning",
+    status: "in-progress",
+    featured: false,
+    github: "https://github.com/devp-with-v/ml-predictor",
+    image: "/images/ml-predictor-screenshot.jpg",
+  },
+  {
+    id: "data-visualizer",
+    title: "Data Visualization Dashboard",
+    description: "Interactive dashboard for data analysis and visualization",
+    longDescription:
+      "A powerful dashboard built with React and D3.js for creating interactive data visualizations and analytics reports.",
+    technologies: ["React", "D3.js", "Python", "Flask", "PostgreSQL", "Chart.js"],
+    category: "Data Science",
+    status: "completed",
+    featured: false,
+    github: "https://github.com/devp-with-v/data-visualizer",
+    live: "https://data-viz-dashboard.vercel.app",
+    image: "/images/data-viz-screenshot.jpg",
+  },
+  {
+    id: "cloud-storage",
+    title: "Cloud Storage Solution",
+    description: "Secure cloud storage with file sharing capabilities",
+    longDescription:
+      "A full-stack cloud storage solution with user authentication, file upload/download, sharing capabilities, and AWS S3 integration.",
+    technologies: ["Node.js", "Express", "MongoDB", "AWS S3", "React", "JWT"],
+    category: "Full Stack",
+    status: "in-progress",
+    featured: false,
+    github: "https://github.com/devp-with-v/cloud-storage",
+    image: "/images/cloud-storage-screenshot.jpg",
+  },
+]

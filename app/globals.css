@@ -9,6 +9,83 @@ html {
 body {
   background: #1e1e1e;
   color: #ffffff;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme styles */
+.light-theme body {
+  background: #f8fafc;
+  color: #1e293b;
+}
+\
+.light-theme .bg-\[#1E1E1E\] {
+background-color: #f8fafc !important;
+}
+
+.light-theme .bg-\[#282C33\] {
+background-color: #ffffff !important;
+border: 1px solid #e2e8f0 !important;
+}
+
+.light-theme .text-white {
+  color: #1e293b !important;
+}
+
+.light-theme .text-\[#ABB2BF\] {
+  color: #64748b !important;
+}
+
+.light-theme .text-\[#C778DD\] {
+  color: #8b5cf6 !important;
+}
+
+.light-theme .border-\[#282C33\] {
+border-color: #e2e8f0 !important;
+}
+
+.light-theme .border-\[#ABB2BF\] {
+  border-color: #cbd5e1 !important;
+}
+
+.light-theme .border-\[#C778DD\] {
+  border-color: #8b5cf6 !important;
+}
+
+.light-theme .bg-\[#C778DD\] {
+  background-color: #8b5cf6 !important;
+}
+
+.light-theme .hover\:bg-\[#C778DD\]:hover {
+  background-color: #8b5cf6 !important;
+}
+
+.light-theme .hover\:text-\[#C778DD\]:hover {
+  color: #8b5cf6 !important;
+}
+
+.light-theme .hover\:border-\[#C778DD\]:hover {
+  border-color: #8b5cf6 !important;
+}
+
+/* Light theme particles - make them more subtle */
+.light-theme .bg-\[#C778DD\].opacity-20 {
+  background-color: #8b5cf6 !important;
+  opacity: 0.1 !important;
+}
+
+/* Light theme shadows */
+.light-theme .hover\:shadow-\[#C778DD\]\/20:hover {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.2) !important;
+}
+
+.light-theme .hover\:shadow-\[#C778DD\]\/10:hover {
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.1) !important;
+}
+
+/* Light theme backdrop blur */
+.light-theme .bg-\[#1E1E1E\]\/80 {
+background-color: rgba(248, 250, 252, 0.8) !important;
 }
 
 /* Custom scrollbar */
@@ -20,13 +97,26 @@ body {
   background: #282c33;
 }
 
+.light-theme ::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
 ::-webkit-scrollbar-thumb {
   background: #c778dd;
   border-radius: 4px;
 }
 
+.light-theme ::-webkit-scrollbar-thumb {
+  background: #8b5cf6;
+  border-radius: 4px;
+}
+
 ::-webkit-scrollbar-thumb:hover {
   background: #ab4fb6;
+}
+
+.light-theme ::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
 }
 
 /* Mobile menu */
@@ -74,28 +164,75 @@ h3 {
   line-height: 1.5;
 }
 
-/* Improved spacing for sections */
-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+/* Enhanced 3D effects */
+.transform-3d {
+  transform-style: preserve-3d;
 }
 
-/* Enhanced card styles */
-.card {
-  transition: transform 0.3s ease-in-out;
+/* Glow effects */
+.glow {
+  box-shadow: 0 0 20px rgba(199, 120, 221, 0.3);
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.glow:hover {
+  box-shadow: 0 0 30px rgba(199, 120, 221, 0.5);
 }
 
-/* Button hover effect */
-.button {
-  transition: all 0.3s ease-in-out;
+.light-theme .glow {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
 }
 
-.button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 6px rgba(199, 120, 221, 0.1);
+.light-theme .glow:hover {
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
 }
 
+/* Perspective for 3D transforms */
+.perspective {
+  perspective: 1000px;
+}
+
+/* Animation keyframes */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(199, 120, 221, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(199, 120, 221, 0.8);
+  }
+}
+
+.light-theme @keyframes pulse-glow {
+0%,
+100% {
+  box-shadow: 0 0 5px rgba(139, 92, 246, 0.5);
+}
+50% {
+box-shadow: 0 0 20px rgba(139, 92, 246, 0.8
+)
+;
+}
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
