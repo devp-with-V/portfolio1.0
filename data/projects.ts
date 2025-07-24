@@ -11,76 +11,92 @@ export const projects: Project[] = [
     category: "Web Development",
     status: "completed",
     featured: true,
-    github: "https://github.com/devp-with-v/portfolio",
-    live: "https://vedant-portfolio.vercel.app",
+    github: "https://github.com/devp-with-V/portfolio1.0",
+    live: "https://vedantportiflio.vercel.app/",
     image: "/images/portfolio-screenshot.jpg",
   },
-  {
-    id: "protectx",
-    title: "ProtectX",
-    description: "Discord anti-crash bot with advanced protection features",
-    longDescription:
-      "A comprehensive Discord bot designed to protect servers from various attacks and crashes. Built with Node.js and Discord.js with real-time monitoring capabilities.",
-    technologies: ["React", "Express", "Discord.js", "Node.js", "HTML", "SCSS", "Python", "Flask"],
-    category: "Bot Development",
-    status: "completed",
-    featured: true,
-    github: "https://github.com/devp-with-v/protectx",
-    live: "https://protectx-bot.herokuapp.com",
-    image: "/images/protectx-screenshot.jpg",
-  },
-  {
-    id: "kahoot-answers",
-    title: "Kahoot Answers Viewer",
-    description: "Get answers to your kahoot quiz in real-time",
-    longDescription:
-      "A web application that helps users view Kahoot quiz answers in real-time. Built with modern web technologies for fast and reliable performance.",
-    technologies: ["CSS", "Express", "Node.js", "JavaScript", "HTML"],
-    category: "Web Application",
-    status: "completed",
-    featured: true,
-    github: "https://github.com/devp-with-v/kahoot-answers",
-    live: "https://kahoot-answers.netlify.app",
-    image: "/images/kahoot-screenshot.jpg",
-  },
-  {
-    id: "ml-predictor",
-    title: "ML Price Predictor",
-    description: "Machine learning model for price prediction using various algorithms",
-    longDescription:
-      "A comprehensive machine learning project that predicts prices using multiple algorithms including Random Forest, Linear Regression, and Neural Networks.",
-    technologies: ["Python", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
-    category: "Machine Learning",
-    status: "in-progress",
-    featured: false,
-    github: "https://github.com/devp-with-v/ml-predictor",
-    image: "/images/ml-predictor-screenshot.jpg",
-  },
-  {
-    id: "data-visualizer",
-    title: "Data Visualization Dashboard",
-    description: "Interactive dashboard for data analysis and visualization",
-    longDescription:
-      "A powerful dashboard built with React and D3.js for creating interactive data visualizations and analytics reports.",
-    technologies: ["React", "D3.js", "Python", "Flask", "PostgreSQL", "Chart.js"],
-    category: "Data Science",
-    status: "completed",
-    featured: false,
-    github: "https://github.com/devp-with-v/data-visualizer",
-    live: "https://data-viz-dashboard.vercel.app",
-    image: "/images/data-viz-screenshot.jpg",
-  },
-  {
-    id: "cloud-storage",
-    title: "Cloud Storage Solution",
-    description: "Secure cloud storage with file sharing capabilities",
-    longDescription:
-      "A full-stack cloud storage solution with user authentication, file upload/download, sharing capabilities, and AWS S3 integration.",
-    technologies: ["Node.js", "Express", "MongoDB", "AWS S3", "React", "JWT"],
-    category: "Full Stack",
-    status: "in-progress",
-    featured: false,
-    github: "https://github.com/devp-with-v/cloud-storage",
-    image: "/images/cloud-storage-screenshot.jpg",
-  },
+{
+  id: "vpn-aws-wireguard",
+  title: "Secure VPN Solution on AWS",
+  description: "Personal WireGuard VPN server deployed on AWS EC2 for secure, unrestricted internet access.",
+  longDescription:
+    "Designed and deployed a personal WireGuard VPN server on an AWS EC2 instance to bypass network restrictions and secure internet traffic. Utilized systematic command-line diagnostics (wg show, iptables, ufw status) to identify and resolve complex network issues. Demonstrated strong capabilities in cloud networking and Linux system administration.",
+  technologies: ["AWS EC2", "WireGuard", "Ubuntu Linux", "Networking", "SSH"],
+  category: "Cloud & Networking",
+  status: "completed",
+  featured: false,
+  github: "", // Add if public
+  live: "",   // Not applicable
+  image: "/images/vpn-aws-wireguard.jpg",
+},
+{
+  id: "gpt2-text-api",
+  title: "Personalized GPT-2 Text Generation API",
+  description: "GPU-accelerated FastAPI serving Hugging Face GPT-2 with Dockerized deployment and web UI.",
+  longDescription:
+    "Developed and deployed a GPU-accelerated text generation API using FastAPI to serve a Hugging Face GPT-2 model, enabling efficient local inference. Engineered a Docker container for the application, optimizing the build process for seamless GPU access on NVIDIA RTX 3050 hardware. Demonstrated proficiency in MLOps, containerization, and full-stack API development.",
+  technologies: ["FastAPI", "Docker", "PyTorch", "CUDA", "Hugging Face", "NVIDIA RTX 3050"],
+  category: "Machine Learning",
+  status: "completed",
+  featured: false,
+  github: "", // Add if public
+  live: "",   // Add web UI link if available
+  image: "/images/gpt2-text-api.jpg",
+},
+{
+  id: "ai-data-modeling",
+  title: "AI Generated Data Modeling and Testing",
+  description: "Research project on predictive modeling using AI-generated and semi-original data.",
+  longDescription:
+    "Developed a comprehensive ML project exploring AI-generated and semi-original data for predictive modeling across domains like weather detection, diabetes, and stock market analysis. Focused on building efficient ways to find and test readily available data without special filtering. Used Python, Jupyter Notebook, and sklearn (Random Forest, Logistic Regression, Linear Regression).",
+  technologies: ["Python", "Jupyter Notebook", "scikit-learn", "Random Forest", "Logistic Regression", "Linear Regression"],
+  category: "Research",
+  status: "in-progress",
+  featured: false,
+  github: "", // Add if public
+  live: "",   // Add link if available
+  image: "/images/ai-data-modeling.jpg",
+},
+{
+  id: "fx-scale",
+  title: "F(x) Scale - Image Transformation Platform",
+  description: "Open-source, privacy-focused image transformation platform with real-time previews.",
+  longDescription:
+    "Implemented a client-side processing architecture to ensure user privacy by keeping all image data within the browser. Developed seven specialized image converters, including ASCII Art, Braille Art, Pixel Art, and Text Portrait Generation, with real-time previews. Built with Next.js 14, Tailwind CSS, and the HTML5 Canvas API.",
+  technologies: ["Next.js 14", "Tailwind CSS", "HTML5 Canvas API", "JavaScript"],
+  category: "Web Application",
+  status: "completed",
+  featured: true,
+  github: "", // Add if public
+  live: "",   // Add link if available
+  image: "/images/fx-scale.jpg",
+},
+{
+  id: "olden-days",
+  title: "OldenDays - Retro Games",
+  description: "Classic arcade games (Tetris, Pac-Man) with modern, responsive design.",
+  longDescription:
+    "Developed classic arcade games (Tetris, Pac-Man) with a modern, responsive, and mobile-friendly design. Implemented keyboard controls and score tracking for an engaging user experience. Utilized Next.js 14, TypeScript, Tailwind CSS, UI Components, and React Hooks.",
+  technologies: ["Next.js 14", "TypeScript", "Tailwind CSS", "React Hooks"],
+  category: "Game Development",
+  status: "completed",
+  featured: false,
+  github: "", // Add if public
+  live: "",   // Add link if available
+  image: "/images/olden-days.jpg",
+},
+{
+  id: "moments",
+  title: "Moments",
+  description: "Modern web app for taking filtered pictures without sign-in.",
+  longDescription:
+    "A modern web application for taking filtered pictures without any sign in. Built with React, TypeScript, Vite, and Tailwind CSS. Designed and implemented a responsive, user-friendly interface. Deployed on Vercel for fast, reliable access.",
+  technologies: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+  category: "Web Application",
+  status: "completed",
+  featured: false,
+  github: "", // Add if public
+  live: "",   // Add Vercel link if available
+  image: "/images/moments.jpg",
+},
 ]
