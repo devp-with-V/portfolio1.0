@@ -44,10 +44,10 @@ export default function Home() {
         <HeroSection />
         <QuoteSection />
         <ProjectsSection />
-        <SkillsSection />
-        <ExperienceSection />
+        {/* <SkillsSection /> */}
+        {/* <ExperienceSection /> */}
         <AboutSection />
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
         <ContactSection />
 
         <BackToTop />
